@@ -1,7 +1,9 @@
 Do While (cont2 <= 10)
 
     Do While (cont <= 10)
-    If cont Mod 2 <> 0 Then Cells(cont2, cont).value = "Coluna Impar" Else: Cells(cont2, cont).value = "Coluna Par"
+    If cont Mod 2 <> 0 Then valor = "Coluna Impar" Else: valor = "Coluna Par"
+    If cont2 Mod 2 <> 0 Then valor = valor + " Linha Impar" Else: valor = valor + " Linha Par"
+    Cells(cont2, cont).value = valor
     cont = cont + 1
     
     Loop
