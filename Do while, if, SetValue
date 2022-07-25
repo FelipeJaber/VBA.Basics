@@ -1,0 +1,11 @@
+Do While (cont2 <= 10)
+
+    Do While (cont <= 10)
+    If cont Mod 2 <> 0 Then Cells(cont2, cont).value = "Coluna Impar" Else: Cells(cont2, cont).value = "Coluna Par"
+    cont = cont + 1
+    
+    Loop
+    
+cont2 = cont2 + 1
+cont = 1
+Loop
